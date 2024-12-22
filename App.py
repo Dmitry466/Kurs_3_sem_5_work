@@ -13,7 +13,7 @@ def gfg():
         wg=""
         one = request.form.get("1")
         if one is not None:
-            wg="ag"
+            wg="agфы"
         text = request.form.get("Text")
         return render_template("index1.html",data="cipher"+text+wg)
     return render_template("index1.html",data="")
