@@ -1,0 +1,699 @@
+<html lang="en" data-bs-theme="light"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert Unicode UTF-8, UTF-32 to UTF-16 formats representations and vice versa.">
+  <meta name="csrf-token" content="wzYdFEwJkFueBste6mVkCg4WzS7Dp1ed7DEmW8xo">
+
+
+    <meta property="og:title" content="UTF16 Encode Decode | CodersTool">
+    <meta property="og:description" content="Convert Unicode UTF-8, UTF-32 to UTF-16 formats representations and vice versa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coderstool.com/utf16-encoding-decoding">
+    <meta property="og:image" content="https://www.coderstool.com/img/og/2/unicode-utf-converter.png">
+    <meta property="og:site_name" content="No Code Developers Tools - CodersTool.com">
+    <meta name="twitter:title" content="UTF16 Encode Decode | CodersTool">
+    <meta name="twitter:description" content="Convert Unicode UTF-8, UTF-32 to UTF-16 formats representations and vice versa.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.coderstool.com/img/og/2/unicode-utf-converter.png">
+    <meta name="twitter:site" content="@CodersTool">
+  <link rel="shortcut icon" href="https://www.coderstool.com/img/favicon.png">
+  <link rel="apple-touch-icon" href="https://www.coderstool.com/img/apple-touch-icon.png">
+  <title>UTF16 Encode Decode | CodersTool</title>
+    <link rel="canonical" href="https://www.coderstool.com/utf16-encoding-decoding">
+
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+    <link rel="dns-prefetch" href="https://apis.google.com">
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+        <link rel="prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://www.coderstool.com/css/app-main.css?id=cd9a5f00eff2e573806eab725e8ac91d">
+     <style> .tab-content { padding-top: 20px; } .tbpad { padding-left: 10px; padding-right: 10px; } form>div>div>.form-group { margin-bottom: 30px; } .code_buttons { border-bottom: 1px solid #ddd; font-size: .85em; background: #f7f7f7; text-align: left; padding: 6px 8px 4px; display: grid; } .go_right { float: right; text-align: right; } .buttonsm { background-color: #ddd; border-bottom: 2px solid #ccc; border-left: 0; border-radius: 3px; border-right: 0; border-top: 0; color: #000; cursor: pointer; display: inline-block; font-family: "segoe ui", "trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Sans-Serif; font-size: 12px; font-weight: 400; height: 18px; line-height: 18px; text-align: center; text-decoration: none; padding: 0 6px; opacity: .75; margin: 0 0 0 8px; } </style>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-76T7BG1TVX&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4cc1v862309486za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N3K3V2J"></script><script type="application/ld+json">{ "@context": "http://schema.org/", "@type": "WebSite", "name": "UTF16 Encode Decode | CodersTool",
+        "image": "https://www.coderstool.com/img/coderstool-card.png", "url": "https://www.coderstool.com/utf16-encoding-decoding", "description": "Convert Unicode UTF-8, UTF-32 to UTF-16 formats representations and vice versa.",
+        "isPartOf": { "@type": "Website", "name": "CodersTool", "url": "https://www.coderstool.com" },
+        "sameAs": ["https://twitter.com/coderstool" ] }</script>    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N3K3V2J');</script>
+<!-- End Google Tag Manager -->
+</head><body>
+  <script>document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('themeMode') || 'light');</script>
+
+<div id="wrapper">
+  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="https://www.coderstool.com"><img id="ctlogo" src="https://www.coderstool.com/img/logo-header.png" height="44" width="136" alt="Coders Tool"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+        <li class="nav-item">
+          <form id="page-box" class="page-search d-flex" role="search">
+            <input type="text" class="form-control" name="q" maxlength="15" placeholder="Search for tools" autocomplete="off" id="search">
+            <div class="page-search__icon"><i class="fa fa-search"></i></div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sitemap">Sitemap</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SEO
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://www.coderstool.com/text-content-tools">Text Content Tools</a></li>
+                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/seo-tools">SEO Tools</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/backlinks-tool">Link Building Tools</a></li>
+                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/meta-tags">Web Code Tools</a></li>
+                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/security-tools">Security Tools</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/web-page-tools">Web Page Tools</a></li>
+                                                                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/web-tools">Website Tools</a></li>
+                                                                                                                                                                                                                                                                                                                                                          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coding
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a class="dropdown-item" href="https://www.coderstool.com/test-data-tools">Test Data Tools</a></li>
+                                                                                                                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/time-tools">Time Tools</a></li>
+                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/network-tools">Network Tools</a></li>
+                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/designer-tools">Designer Tools</a></li>
+                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/color-conversion">Color Conversion Tools</a></li>
+                                                                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/data-format-conversion">Data Format Conversion Tools</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/unicode-utf-tools">Unicode UTF Converter</a></li>
+                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/image-editing-tools">Image Editing Tools</a></li>
+                                                                                                                                  </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Programing
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                                                                                    <li><a class="dropdown-item" href="https://www.coderstool.com/database-tools">Database Tools</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/encode-decode-tools">Encode Decode Tools</a></li>
+                                                                                                                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/conversion-tools">Programmer Calculator</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/dev-tools">Developer Tools</a></li>
+                                                                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/sorting-algorithms">Sorting Algorithms</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/code-editor-tools">Code Editor Tools</a></li>
+                                                                                                <li><a class="dropdown-item" href="https://www.coderstool.com/encryption-tools">Encryption Tools</a></li>
+                                                                                                                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/base64-tools">Base64 Tools</a></li>
+                                  </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            General
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.coderstool.com/tags/team-building">Team Building</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <li><a class="dropdown-item" href="https://www.coderstool.com/unit-conversion-tools">Unit Converters</a></li>
+                                                                                                                                                                                                                        <li><a class="dropdown-item" href="https://www.coderstool.com/charting-tools">Charting Tools</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/cheat-sheets">Cheat Sheets</a></li>
+                                                <li><a class="dropdown-item" href="https://www.coderstool.com/financial-tools">Financial Tools</a></li>
+                                                          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tutorials
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.coderstool.com/quiz">MCQ Quiz</a></li>
+            <li><a class="dropdown-item" href="https://www.coderstool.com/snippets">Snippets</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://www.coderstool.com/blog">Blog</a>
+        </li>
+        <li class="nav-item page-mode__icon">
+          <a class="nav-link dark-mode-icon" href="#" title="Change theme" data-theme-toggle="" aria-label="Change theme">
+            <svg width="1em" height="1em" class="dmicon">
+              <use xlink:href="#theme-s"></use>
+            </svg>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="d-none">
+            <defs>
+              <symbol id="theme-m" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+              </symbol>
+            </defs>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="d-none">
+            <defs>
+              <symbol id="theme-s" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+              </symbol>
+            </defs>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </nav>
+</div>
+
+<ul class="list-inline list-group-accent search-results" id="index-results"></ul>  <div id="page-wrapper" class="pt-2 pb-4">
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="clearfix"><div class=" float-end"><ul class="list-unstyled social-buttons d-flex">
+    <li><span class="shareon"><i class="fa-solid fa-square-share-nodes"></i></span></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="twitter" title="twitter" class="fa-brands fa-twitter"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="facebook" title="facebook" class="fa-brands fa-facebook"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="linkedin" title="linkedin" class="fa-brands fa-linkedin"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="reddit" title="reddit" class="fa-brands fa-reddit"></span></a></li>
+</ul></div></span>
+
+                <div class="d-flex align-items-center list-programs-title">
+          <h1 id="title">UTF16 Encode Decode <i id="favToolImg" class="hideden" style="cursor: pointer; font-size:large;" aria-hidden="true" title="make it favourite"></i></h1>
+                    <div class="ms-auto lh-1">
+            <a href="https://www.coderstool.com/unicode-utf-tools" title="Show tools in this category"><i class="fa fa-sliders fa-2x"></i></a>
+          </div>
+                  </div>
+
+                <span class="clearfix">
+    <div class="float-end">
+
+        <ul class="tags">
+                        <li class="tag"><a class="nav-link" href="https://www.coderstool.com/tags/unicode">UTF</a></li>
+                        <li class="tag"><a class="nav-link" href="https://www.coderstool.com/unicode-utf-tools">Unicode</a></li>
+                    </ul>
+    </div>
+</span>
+
+
+<div class="card">
+  <div class="card-header">
+    <h2 class="title">UTF16 Encode Decode</h2>
+  </div>
+  <div class="card-body">
+        <form><input type="hidden" name="_token" value="wzYdFEwJkFueBste6mVkCg4WzS7Dp1ed7DEmW8xo" autocomplete="off">
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <div class="form-inline">
+                        <label><input type="checkbox" id="chknotation"> Remove notation (  \u )</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox" id="chkspace"> Ignore convert white space</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox" id="chkUpper"> Convert to uppercase</label>
+                      </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-target="#home" aria-controls="home" data-bs-toggle="tab" aria-selected="true" role="tab">Convert Text</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" data-bs-target="#profile" aria-controls="profile" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Convert File</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content tbpad">
+            <div role="tabpanel" class="tab-pane active" id="home">
+              <div class="form-group">
+                <label for="txtInput1">Text</label>
+                <div class="pull-right"><label> <a href="#" id="getSample" class="buttonsm">Sample</a> </label></div>
+                <textarea class="form-control vertical-resize" rows="6" placeholder="Type or paste your text here..." id="txtInput1"></textarea>
+                <div class="pull-right"><label> <a href="#" class="_copycb buttonsm">Copy</a> <a href="#" class="_cleardata buttonsm">Clear</a> </label></div>
+              </div>
+              <div class="form-group">
+                <label for="txtInput2">UTF-16</label>
+                <textarea class="form-control vertical-resize" rows="6" placeholder="Type or paste your text here..." id="txtInput2"></textarea>
+                <div class="pull-right"><label> <a href="#" class="_copycb buttonsm">Copy</a> <a href="#" class="_cleardata buttonsm">Clear</a> </label></div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+              <div class="input-group">
+                <span class="input-group-addon">Upload a file </span>
+                <input type="file" class="form-control" placeholder="Select a file" id="fileinput">
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon">File encoding </span>
+                <select id="selectdecode" class="form-control" style="width:150px;">
+                  <optgroup label="ISO">
+                    <option value="iso-8859-2">iso-8859-2</option>
+                    <option value="iso-8859-3">iso-8859-3</option>
+                    <option value="iso-8859-4">iso-8859-4</option>
+                    <option value="iso-8859-5">iso-8859-5</option>
+                    <option value="iso-8859-6">iso-8859-6</option>
+                    <option value="iso-8859-7">iso-8859-7</option>
+                    <option value="iso-8859-8">iso-8859-8</option>
+                    <option value="iso-8859-8i">iso-8859-8i</option>
+                    <option value="iso-8859-10">iso-8859-10</option>
+                    <option value="iso-8859-13">iso-8859-13</option>
+                    <option value="iso-8859-14">iso-8859-14</option>
+                    <option value="iso-8859-15">iso-8859-15</option>
+                    <option value="iso-8859-16">iso-8859-16</option>
+                    <option value="iso-2022-jp">iso-2022-jp</option>
+                  </optgroup>
+                  <optgroup label="UTF">
+                    <option value="UTF-8" selected="selected">UTF-8</option>
+                    <option value="UTF-16">UTF-16</option>
+                    <option value="UTF-16BE">UTF-16BE</option>
+                    <option value="UTF-16LE">UTF-16LE</option>
+                    <option value="UTF-32">UTF-32</option>
+                    <option value="UTF-32BE">UTF-32BE</option>
+                    <option value="UTF-32LE">UTF-32LE</option>
+                  </optgroup>
+                  <optgroup label="Window">
+                    <option value="windows-874">windows-874</option>
+                    <option value="windows-1250">windows-1250</option>
+                    <option value="windows-1251">windows-1251</option>
+                    <option value="windows-1252">windows-1252</option>
+                    <option value="windows-1253">windows-1253</option>
+                    <option value="windows-1254">windows-1254</option>
+                    <option value="windows-1255">windows-1255</option>
+                    <option value="windows-1256">windows-1256</option>
+                    <option value="windows-1257">windows-1257</option>
+                    <option value="windows-1258">windows-1258</option>
+                  </optgroup>
+                  <optgroup label="Etc">
+                    <option value="ibm866">ibm866</option>
+                    <option value="koi8-r">koi8-r</option>
+                    <option value="koi8-u">koi8-u</option>
+                    <option value="macintosh">macintosh</option>
+                    <option value="x-mac-cyrillic">x-mac-cyrillic</option>
+                    <option value="gbk">gbk</option>
+                    <option value="gb18030">gb18030</option>
+                    <option value="hz-gb-2312">hz-gb-2312</option>
+                    <option value="big5">big5</option>
+                    <option value="euc-jp">euc-jp</option>
+                </optgroup></select>
+              </div>
+              <br>
+              <div class="form-group">
+                <div class="text-center">
+                  <button type="button" id="btnEncode" class="btn btn-primary">Encode</button>
+                  <button type="button" id="btnDecode" class="btn btn-primary">Decode</button>
+                </div>
+              </div>
+              <br>
+              <div class="clearfix"></div>
+              <div class="percentimg">
+                <img src="img/preloader.gif" alt="loading coders tool">
+                <br>
+                Processing...
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+      </div>
+</div>
+                <div class="my-4">
+    <span class="list-programs-title related-tools mb-2 h5">Try These Related Tools</span>
+    <div class="d-flex flex-wrap">
+                 <div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/utf32-encoding-decoding">
+        <div class="bs_sm">UTF32 Encode Decode</div>
+    </a>
+</div>                 <div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/ascii-to-hex">
+        <div class="bs_sm">ASCII Text to Hex Converter</div>
+    </a>
+</div>                 <div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/ascii-to-binary">
+        <div class="bs_sm">ASCII Text to Binary Converter</div>
+    </a>
+</div>                 <div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/unicode-text-converter">
+        <div class="bs_sm">Unicode Converter</div>
+    </a>
+</div>                 <div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/utf8-encoding-decoding">
+        <div class="bs_sm">UTF8 Encode Decode</div>
+    </a>
+</div>            </div>
+</div>
+                <div class="mt-4">
+          <div class="adsense adsense--inline--3">
+		<ins data-full-width-responsive="true" data-ad-client="ca-pub-8651993678496444" data-ad-slot="6444728631" class="adsbygoogle"></ins>
+		<p class="adsense__loading"><span>…</span></p>
+	</div>
+          <div class="content-info">
+  <h2>UTF-16&nbsp;Converter</h2>
+
+<p>UTF-16&nbsp;converter helps you convert between Unicode character numbers, characters, UTF-8&nbsp;code units in hex, percent escapes,and numeric character references.</p>
+
+<h2>How to convert to UTF16</h2>
+
+<ol>
+	<li>Enter your&nbsp;text in the editor at the top.</li>
+	<li>You will automatically get UTF16 bytes at the bottom.</li>
+	<li>You can also import text files for conversion</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><meta name="uuid" content="uuidGtBpVMl1YeQ0"><meta charset="utf-8"></p>
+
+<h2>A Detailed Guide to UTF 16 vs UTF 8: What You Need to Know</h2>
+
+<p>Understanding the fundamental differences between UTF 16 and UTF 8 is vital to ensuring a practical programming language for your projects.</p>
+
+<p>UTF 16 and UTF 8 are different character encoding formats in software programming languages. Understanding the differences between the two will help you choose the suitable encoding format for your projects and ensure high efficiency.</p>
+
+<h2>What is Unicode?</h2>
+
+<p>Unicode is a character encoding standard which defines how characters are represented in the text. It consists of a code point for each character, allowing programs to identify and display each character with an assigned number. Unicode also supports several different encoding forms, such as UTF 8 and UTF 16.</p>
+
+<p>&nbsp;</p>
+
+<h2>What is UTF-16?</h2>
+
+<p>UTF-16 is a Unicode encoding format that uses two bytes per character and is used to represent characters in the Basic Multilingual Plane. This standard allows up to 65,536 possible characters but does not cover all Unicode characters. UTF-16 can be represented using either big-endian (most significant byte first) or little-endian (least significant byte first) format.</p>
+
+<h2>UTF-16 encoding&nbsp;</h2>
+
+<p>UTF-16 is a Unicode encoding that consists of one or two 16-bit components for each character. As single Unicode 16-bit units, UTF-16 offers access to around 60,000 characters. Surrogate pairs, a mechanism, allows it to access an additional 1 000 000 characters.</p>
+
+<p>These pairings' high (first) and low (second) values are separated into two Unicode code ranges. 0xD800 to 0xDBFF are the highs, and 0xDC00 to 0xDFFF are the lows.</p>
+
+<p>Characters needing surrogate pairs are uncommon because the most common characters have already been encoded in the first 64,000 values.</p>
+
+<p>UTF-16 is extremely well designed as the best compromise between handling and space, and all commonly used characters can be stored with one code unit per code point. UTF16 is the default encoding for Unicode.</p>
+
+<h2>What is UTF-8?&nbsp;</h2>
+
+<p>UTF-8 is a Unicode encoding format that uses one byte per character and represents characters not covered by the UTF-16 standard. Due to its smaller size, it is popularly used for web pages and software applications. It also allows up to 4 bytes per character, representing more than one million characters.</p>
+
+<h2>Common Use Cases for UTF-16 and UTF-8</h2>
+
+<p>UTF-16 is the standard representation system for Unicode characters and is used in Windows systems or applications using double-byte character encoding. It can be the default encoding for HTML documents but is usually too large to be practical for web pages. UTF-8 provides a much smaller file size and is more efficient when displaying non-Latin languages such as Chinese, Korean, or Japanese characters. As a result, it’s often the preferred choice for web pages and software applications.</p>
+
+<h2>The Advantages of UTF-8 vs UTF-16</h2>
+
+<p>One of the significant benefits of UTF-8 is that it compresses text by only using as many bytes as needed to represent a character. This ensures that your files are smaller in size and more efficient to process, both for loading times on webpages and for software download speeds. It also makes localization easier since one global character set can be used without specifying which encoding the user needs.</p>
+
+<h2>Summary:&nbsp;UTF16 and UTF8 character encoding formats</h2>
+
+<ul>
+	<li>UTF-16 and UTF-8 have commonly used character encoding formats representing text in computers.&nbsp;</li>
+	<li>UTF-16 is commonly used in applications that require support for non-Latin scripts, while UTF-8 is more commonly used in web applications due to its smaller storage size and efficient handling of Latin scripts.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>What are Unicode encodings UTF-8, UTF-16, and UTF-32?</h2>
+
+<p>We now know that Unicode is an international standard that encodes every known character to a unique number. But, how do we move these unique numbers around the internet? Transmission is achieved using bytes of information.</p>
+
+<p>UTF-8: Every code point is encoded using one, two, three, or four bytes in UTF-8. It is ASCII backward compatible. All English characters use only one byte, which is exceptionally efficient. If we're sending non-English characters, we'll merely need more bytes. &nbsp;It is the most used type of encoding, and Python 3 uses it by default. The default encoding in Python 2 is ASCII (unfortunately).<br>
+UTF-16 UTF-16 has a variable length of 2 or 4 bytes. Because most Asian text can be encoded in two bytes each, this encoding is ideal for it. It isn't very good for English since every English character requires two bytes..<br>
+UTF-32 is fixed 4 bytes. All characters are encoded in 4 bytes, so it needs a lot of memory. It is not used very often.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><meta name="uuid" content="uuidkAZA5BOKTvYH"><meta charset="utf-8"></p>
+
+<h2>Why is UTF16 Encode relevant today?</h2>
+
+<p>UTF-16 (Unicode Transformation Format - 16-bit) is a character encoding format that remains relevant today for several reasons:</p>
+
+<ol>
+	<li><strong>Backward compatibility</strong>: Many legacy systems and applications were designed using UTF-16 encoding, especially Microsoft Windows and Java. Maintaining compatibility with these systems is essential to ensure smooth functioning and data exchange.</li>
+	<li><strong>Wide adoption</strong>: Despite the growing popularity of UTF-8, UTF-16 is still widely used in various programming languages, software applications, and operating systems. Many developers continue to work with UTF-16, making it an essential skill.</li>
+	<li><strong>Unicode support</strong>: UTF-16 supports a wide range of Unicode characters, including those outside the Basic Multilingual Plane (BMP). This allows for representing a vast array of languages and symbols, making it a versatile encoding format.</li>
+	<li><strong>Efficient for specific languages</strong>: While UTF-8 is more space-efficient for languages primarily using Latin script, UTF-16 can be more efficient for languages with larger character sets, such as Chinese, Japanese, and Korean. UTF-16 encoding can lead to smaller file sizes and faster processing times in these cases.</li>
+</ol>
+
+<p>However, it is worth noting that UTF-8 has become the dominant encoding format for the web and many new applications due to its compatibility with ASCII and its efficient variable-length encoding. As a result, the relevance of UTF-16 may decline over time, but for now, it remains a vital encoding format in specific contexts.</p>
+
+<p>&nbsp;</p>
+</div>
+        </div>
+                <br><br>
+<h3>Unicode: ASCII, UTF-8, code points, character encodings</h3>
+<div id="loadYoutube"></div>
+<script type="text/javascript">
+	var observer = new IntersectionObserver(function(entries) {
+		if (entries[0]['isIntersecting'] === true) {
+			if (!document.querySelector("#loadYoutube").innerHTML.includes("iframe")) {
+				document.querySelector("#loadYoutube").innerHTML = '<iframe width="100%" height="345" src="https://www.youtube.com/embed/ut74oHojxqo" allowfullscreen></iframe>';
+			}
+		}
+	}, {
+		threshold: [0, 0.5, 1]
+	});
+
+	observer.observe(document.querySelector("#loadYoutube"));
+</script>
+                 <blockquote class="blockquote"><p>Treat your password like your toothbrush. Do not let anybody else use it, and get a new one every six months.</p><footer class="blockquote-footer">Clifford Stoll</footer></blockquote><br>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row mt-4" style="padding:0;margin:16px 0;"><div class="adsense ">
+		<ins data-full-width-responsive="true" data-ad-client="ca-pub-8651993678496444" data-ad-slot="6444728631"></ins>
+		<p class="adsense__loading"><span>…</span></p>
+	</div>
+</div>
+  </div>
+  <div id="footertool" class="border-top pt-2 pb-5">
+	<div class="container">
+		<div class="fs-4 my-2 text-center">CodersTool Categories</div>
+		<div class="row align-items-start">
+						<div class="col">
+												<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/text-content-tools">
+        <div class="bs_sm">Text Content Tools</div>
+    </a>
+</div>																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/seo-tools">
+        <div class="bs_sm">SEO Tools</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/backlinks-tool">
+        <div class="bs_sm">Link Building Tools</div>
+    </a>
+</div>																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/meta-tags">
+        <div class="bs_sm">Web Code Tools</div>
+    </a>
+</div>																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/security-tools">
+        <div class="bs_sm">Security Tools</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/web-page-tools">
+        <div class="bs_sm">Web Page Tools</div>
+    </a>
+</div>																																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/web-tools">
+        <div class="bs_sm">Website Tools</div>
+    </a>
+</div>																																																																																																																			</div>
+						<div class="col">
+																				<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/test-data-tools">
+        <div class="bs_sm">Test Data Tools</div>
+    </a>
+</div>																																																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/time-tools">
+        <div class="bs_sm">Time Tools</div>
+    </a>
+</div>																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/network-tools">
+        <div class="bs_sm">Network Tools</div>
+    </a>
+</div>																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/designer-tools">
+        <div class="bs_sm">Designer Tools</div>
+    </a>
+</div>																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/color-conversion">
+        <div class="bs_sm">Color Conversion Tools</div>
+    </a>
+</div>																																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/data-format-conversion">
+        <div class="bs_sm">Data Format Conversion Tools</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/unicode-utf-tools">
+        <div class="bs_sm">Unicode UTF Converter</div>
+    </a>
+</div>																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/image-editing-tools">
+        <div class="bs_sm">Image Editing Tools</div>
+    </a>
+</div>																																											</div>
+						<div class="col">
+																																												<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/database-tools">
+        <div class="bs_sm">Database Tools</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/encode-decode-tools">
+        <div class="bs_sm">Encode Decode Tools</div>
+    </a>
+</div>																																																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/conversion-tools">
+        <div class="bs_sm">Programmer Calculator</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/dev-tools">
+        <div class="bs_sm">Developer Tools</div>
+    </a>
+</div>																																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/sorting-algorithms">
+        <div class="bs_sm">Sorting Algorithms</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/code-editor-tools">
+        <div class="bs_sm">Code Editor Tools</div>
+    </a>
+</div>																																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/encryption-tools">
+        <div class="bs_sm">Encryption Tools</div>
+    </a>
+</div>																																																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/base64-tools">
+        <div class="bs_sm">Base64 Tools</div>
+    </a>
+</div>											</div>
+						<div class="col">
+																																																																																																																																												<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/unit-conversion-tools">
+        <div class="bs_sm">Unit Converters</div>
+    </a>
+</div>																																																																								<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/charting-tools">
+        <div class="bs_sm">Charting Tools</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/cheat-sheets">
+        <div class="bs_sm">Cheat Sheets</div>
+    </a>
+</div>																<div class="bs_listing bs_sm">
+    <a href="https://www.coderstool.com/financial-tools">
+        <div class="bs_sm">Financial Tools</div>
+    </a>
+</div>																			</div>
+					</div>
+	</div>
+</div>  <div>
+    <footer id="footer" class="pt-4 pt-md-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="pt-2">
+          <a class="navbar-brand" href="https://www.coderstool.com"><img src="https://www.coderstool.com/img/logo-header.png" alt="Coders Tool"></a>
+        </div>
+        <p class="pt-2">Free world-class online tool for all. We provide the opportunity to progress through technology &amp; develop tomorrow’s skills.</p>
+			  <div class="pb-4"><div class="_chromext">
+	<a href="https://chrome.google.com/webstore/detail/bmojppephkmpfcpobohhohljicnkdpnh" target="_blank" rel="noopener" class="">
+		<i class="fa-brands fa-chrome"></i> Get Chrome Extension</a>
+</div></div>
+      </div>
+      <div class="col-md-3">
+        <div class="h3 fw-6 pb-2">Links</div>
+        <ul class="list-unstyled">
+          <li><a class="list-inline-item border-0 py-1" href="https://www.coderstool.com/sitemap">Site Map</a></li>
+          <li><a class="list-inline-item border-0 py-1" href="https://www.coderstool.com/contact">Contact</a></li>
+          <li><a class="list-inline-item border-0 py-1" href="https://www.coderstool.com/about">About</a></li>
+          <li><a class="list-inline-item border-0 py-1" href="https://www.coderstool.com/blog">Blog </a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <div class="h3 fw-6 pb-3">Support Us</div>
+        <ul class="list-unstyled social-buttons d-flex">
+    <li><span class="shareon"><i class="fa-solid fa-square-share-nodes"></i></span></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="twitter" title="twitter" class="fa-brands fa-twitter"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="facebook" title="facebook" class="fa-brands fa-facebook"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="linkedin" title="linkedin" class="fa-brands fa-linkedin"></span></a></li>
+    <li class="ms-3"><a class="" href="#"><span data-social="reddit" title="reddit" class="fa-brands fa-reddit"></span></a></li>
+</ul>
+        <div class="py-3">
+          <a class="pe-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E4NPAWCPZHMBW"><strong>
+          Buy Us A <i class="fa fa-coffee fa-2 pe-2" aria-hidden="true"></i></strong></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="h3 fw-6 pb-2">Follow Us</div>
+        <div class="social-buttons">
+    <a href="https://www.facebook.com/CodersTool" target="_blank" rel="nofollow noopener">
+       <span class="fa-brands fa-square-facebook fa-2x"></span>
+    </a>&nbsp;&nbsp;
+    <a href="https://twitter.com/CodersTool" target="_blank" rel="nofollow noopener">
+        <span class="fa-brands fa-square-twitter fa-2x"></span>
+    </a>&nbsp;&nbsp;
+    <a href="https://www.pinterest.com/CodersTool" target="_blank" rel="nofollow noopener">
+        <span class="fa-brands fa-square-pinterest fa-2x"></span>
+    </a>&nbsp;&nbsp;
+    <a href="https://www.youtube.com/c/CodersTool?sub_confirmation=1" target="_blank" rel="nofollow noopener">
+        <span class="fa-brands fa-square-youtube fa-2x"></span>
+    </a>&nbsp;&nbsp;
+</div>      </div>
+    </div>
+    <div class="text-center border-top border-success-subtle py-3">
+      <span class="list-inline">
+        <span class="list-inline-item border-0">© 2024 Coders Tool. All rights reserved. </span>
+        | <a class="list-inline-item border-0 px-3" href="https://www.coderstool.com/privacy">Privacy</a>
+        | <a class="list-inline-item border-0 px-3" href="https://www.coderstool.com/terms">Terms of Use</a> |
+      </span>
+    </div>
+</div></footer>  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async="" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+
+
+
+  <script src="https://www.coderstool.com/js/all.js?id=5b7fee28efdf609d9ab45a5b37c0aafa"></script>
+  <script src="https://www.coderstool.com/js/adsenseLoader.js?id=f4f0d0fb35fadfb61806ca02ae55d56a"></script>
+  <script async="" src="//cdnjs.cloudflare.com/ajax/libs/goodshare.js/6.1.5/goodshare.min.js"></script>
+
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" integrity="sha256-yNbKY1y6h2rbVcQtf0b8lq4a+xpktyFc3pSYoGAY1qQ=" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script defer="" src="https://www.coderstool.com/js/c_encode.js?id=a8a02a35e034af2fa270b974bdcf6414"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      CodersTool.unicode_file('16');
+    });
+</script>    <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() {
+      window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+
+    document.addEventListener("DOMContentLoaded", function() {
+      CodersTool.init();
+      CodersTool.app_search();
+      // CodersTool.app_search2();
+    });
+  </script>
+  <script async="" src="https://www.coderstool.com/js/modetheme.js?id=47efb5b77c3d095a2410537579dba19f"></script>
+  <script defer="" src="https://www.coderstool.com/dist/js/core/adsloader.js?id=1448eb18236c34cdaa62e59aaeb71656"></script>
+
+
+<div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" integrity="sha256-R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/10.2.7/css/autoComplete.min.css">
+    </div><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></script></body></html>

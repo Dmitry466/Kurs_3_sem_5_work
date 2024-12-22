@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRYPTON Cipher Encode/Decode</h1>
+      <p class="custom">This is a simple Flask application with enhanced CSS styling. Explore and enjoy!</p>
+      <p class="custom">Learn more about <a href="https://flask.palletsprojects.com/">Flask</a>. </p>
+
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'ConvertText')">Convert Text</button>
+  <button class="tablinks" onclick="openCity(event, 'ConvertFile')">Convert File</button>
+
+</div>
+
+<div id="ConvertText" class="tabcontent">
+  <form action="{{ url_for('gfg')}}" method="post">
+
+        <textarea class="form-control vertical-resize" rows="6" name="Text" placeholder="Type or paste your text here..." id="txtInput1">{{data}}</textarea>
+        <button class="Button" type="button" onclick="myFunction()" id="CopyButton1">Copy</button>
+        <button class="Button" type="button" onclick="myFunction1()" id="ResetButton">Reset</button>
+        <input class="Button" name="1" id="Submit1" type="submit" value="Encode" alt="Clear the search form">
+        <input class="Button" name="2" id="Submit2" type="submit" value="Decode" alt="Clear the search form">
+        <script>
+            function myFunction1() {
+            var Text = document.getElementById("txtInput1");
+            Text.value = "";
+            }
+          function myFunction() {
+            var copyText = document.getElementById("txtInput1");
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+          }
+        </script>
+      </form>
+</div>
+
+<div id="ConvertFile" class="tabcontent">
+
+  <label for="avatar">Choose a .txt/.json file:</label>
+    <input type="file" class="fileinput" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+      <h3>Click to download edited file</h3>
+    <p>
+    <input class="Button" id="SubmitFile1" type="submit" value="Encode" alt="Clear the search form">
+      <input class="Button" id="SubmitFile2" type="submit" value="Decode" alt="Clear the search form"></p>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  document.getElementById("defaultOpen").click();
+</script>
+
+    </div>
+  </body>
+</html>
