@@ -271,8 +271,3 @@ def decrypt(text, key):
         fin_text += byte_box_to_text(byte_box)
     return fin_text
 
-
-from io import BytesIO, StringIO
-
-www = StringIO(encrypt("hrosj", "123"))
-print(www.read())
