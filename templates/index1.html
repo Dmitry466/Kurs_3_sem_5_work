@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h1>CRYPTON Cipher Encode/Decode</h1>
-      <p class="custom">This is a simple Flask application with enhanced CSS styling. Explore and enjoy!</p>
-      <p class="custom">Learn more about <a href="https://flask.palletsprojects.com/">Flask</a>. </p>
+        <h1>CRYPTON Cipher Encode/Decode</h1>
+        <p class="custom">CRYPTON is a symmetric block cipher submitted as a candidate for the Advanced Encryption Standard (AES). It is very efficient in hardware implementations and was designed by Chae Hoon Lim of Future Systems Inc.</p>
+        <p class="custom">Learn more about <a href="https://en.wikipedia.org/wiki/CRYPTON">Crypton</a>. </p>
 
-<div class="tab">
-  <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'ConvertText')">Convert Text</button>
-  <button class="tablinks" onclick="openCity(event, 'ConvertFile')">Convert File</button>
+        <div class="tab">
+            <button id="defaultOpen" class="tablinks" onclick="openFolder(event, 'ConvertText')">Convert Text</button>
+            <button class="tablinks" onclick="openFolder(event, 'ConvertFile')">Convert File</button>
 
-</div>
+        </div>
 
-<div id="ConvertText" class="tabcontent">
-  <form action="{{ url_for('gfg')}}" method="post">
+        <div id="ConvertText" class="tabcontent">
+            <form action="/convert_text" method="post">
+                <p class="custom_1">Your text</p>
+                <textarea class="my_textarea" rows="6" name="Text" placeholder="Type or paste your text here..." id="txtInput1">{{data}}</textarea>
+                <button class="Button" type="button" onclick="Copy_text(this.id)" id="CopyButton_1">Copy</button>
+                <button class="Button" type="button" onclick="myFunction1(this.id)" id="ResetButton_1">Reset</button>
+                <input class="Button" name="Encode" id="Submit1" type="submit" value="Encode" alt="Clear the search form">
+                <input class="Button" name="Decode" id="Submit2" type="submit" value="Decode" alt="Clear the search form">
+                <p class="custom_1">Key</p>
+                <textarea class="my_textarea1" rows="6" name="Text1" placeholder="Type or paste your text here..." id="txtInput2">{{data1}}</textarea>
+                <button class="Button" type="button" onclick="Copy_text(this.id)" id="CopyButton_2">Copy</button>
+                <button class="Button" type="button" onclick="myFunction1(this.id)" id="ResetButton_2">Reset</button>
+                <script>
+                    function myFunction1(button_id) {
+                    if (button_id == "ResetButton_1") {
+                    var Text = document.getElementById("txtInput1");;
+                    } else if (button_id == "ResetButton_2") {
+                    var Text = document.getElementById("txtInput2");
+                    } else {
+                    var Text = document.getElementById("txtInput3");
+                    }
+                    Text.value = "";
+                    }
+                  function Copy_text(button_id) {
+                    if (button_id == "CopyButton_1") {
+                    var copyText = document.getElementById("txtInput1");;
+                    } else if (button_id == "CopyButton_2") {
+                    var copyText = document.getElementById("txtInput2");
+                    } else {
+                    var copyText = document.getElementById("txtInput3");
+                    }
+                    // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+                    // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
+                    // Alert the copied text
+                    alert("Copied the text: " + copyText.value);
+                  }
+                </script>
+            </form>
+        </div>
+        <div id="ConvertFile" class="tabcontent">
 
-        <textarea class="form-control vertical-resize" rows="6" name="Text" placeholder="Type or paste your text here..." id="txtInput1">{{data}}</textarea>
-        <button class="Button" type="button" onclick="myFunction()" id="CopyButton1">Copy</button>
-        <button class="Button" type="button" onclick="myFunction1()" id="ResetButton">Reset</button>
-        <input class="Button" name="1" id="Submit1" type="submit" value="Encode" alt="Clear the search form">
-        <input class="Button" name="2" id="Submit2" type="submit" value="Decode" alt="Clear the search form">
+            <form action="/convert_file" method="POST" enctype="multipart/form-data">
+                <label>Choose a .txt/.json file:</label>
+                <input type="file" name="file" class="fileinput" accept=".txt, .json" />
+                <p class="custom_1">Key</p>
+                <textarea class="my_textarea1" rows="6" name="Text2" placeholder="Type or paste your text here..." id="txtInput3">{{data2}}</textarea>
+                <button class="Button" type="button" onclick="Copy_text(this.id)" id="CopyButton_3">Copy</button>
+                <button class="Button" type="button" onclick="myFunction1(this.id)" id="ResetButton_3">Reset</button>
+                <h3>Click to download edited file</h3>
+                <p>
+                    <input class="Button" name="Encode" id="SubmitFile1" type="submit" value="Encode" alt="Clear the search form">
+                    <input class="Button" name="Decode" id="SubmitFile2" type="submit" value="Decode" alt="Clear the search form">
+                </p>
+            </form>
+        </div>
+
         <script>
-            function myFunction1() {
-            var Text = document.getElementById("txtInput1");
-            Text.value = "";
+            function openFolder(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
             }
-          function myFunction() {
-            var copyText = document.getElementById("txtInput1");
-            // Select the text field
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-            // Copy the text inside the text field
-            navigator.clipboard.writeText(copyText.value);
-            // Alert the copied text
-            alert("Copied the text: " + copyText.value);
-          }
+              document.getElementById("defaultOpen").click();
         </script>
-      </form>
-</div>
-
-<div id="ConvertFile" class="tabcontent">
-
-  <label for="avatar">Choose a .txt/.json file:</label>
-    <input type="file" class="fileinput" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-      <h3>Click to download edited file</h3>
-    <p>
-    <input class="Button" id="SubmitFile1" type="submit" value="Encode" alt="Clear the search form">
-      <input class="Button" id="SubmitFile2" type="submit" value="Decode" alt="Clear the search form"></p>
-</div>
-
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-  document.getElementById("defaultOpen").click();
-</script>
 
     </div>
-  </body>
+</body>
+
 </html>
